@@ -1,4 +1,4 @@
 ## remotely run on docker
-1-clone repos
-
-2-docker-composer up -d
+```
+sudo git clone https://github.com/andromeda9096/remotely.git && cd ./remotely && docker-compose up -d
+```
