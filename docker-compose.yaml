@@ -1,0 +1,15 @@
+#---------------------------------------------
+version: "3.3"
+volumes:
+  remotely-vol:
+#---------------------------------------------
+services:
+
+  remotely:
+    image: translucency/remotely:latest
+    restart: always
+    volumes:
+      - remotely-vol:/remotely-data
+    ports:
+      - "5000:5000"
+#---------------------------------------------
